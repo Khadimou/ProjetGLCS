@@ -1,0 +1,11 @@
+sudo apt-get install qt5-default
+
+find_package(Qt5 REQUIRED Core Widgets Gui Qml Quick Qml)
+
+target_link_libraries(cliparser PUBLIC GLCS2020_project::baselib
+			Qt5::Core
+            Qt5::Gui
+            Qt5::Widgets
+            Qt5::Qml
+)
+

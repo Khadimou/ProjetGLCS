@@ -1,4 +1,4 @@
-# Install script for directory: /data/Projet-GLCS-2020-2021
+# Install script for directory: /home/noelle/Desktop/S2/GLCS/Projet_glcs/Projet_NK/ProjetGLCS/Projet-GLCS-2020-2021
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,17 +44,22 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/data/Projet-GLCS-2020-2021/build/baselib/cmake_install.cmake")
+  include("/home/noelle/Desktop/S2/GLCS/Projet_glcs/Projet_NK/ProjetGLCS/Projet-GLCS-2020-2021/build/baselib/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/data/Projet-GLCS-2020-2021/build/heatlib/cmake_install.cmake")
+  include("/home/noelle/Desktop/S2/GLCS/Projet_glcs/Projet_NK/ProjetGLCS/Projet-GLCS-2020-2021/build/heatlib/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/data/Projet-GLCS-2020-2021/build/simpleui/cmake_install.cmake")
+  include("/home/noelle/Desktop/S2/GLCS/Projet_glcs/Projet_NK/ProjetGLCS/Projet-GLCS-2020-2021/build/simpleui/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/home/noelle/Desktop/S2/GLCS/Projet_glcs/Projet_NK/ProjetGLCS/Projet-GLCS-2020-2021/build/cliparser/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -65,5 +70,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/data/Projet-GLCS-2020-2021/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/noelle/Desktop/S2/GLCS/Projet_glcs/Projet_NK/ProjetGLCS/Projet-GLCS-2020-2021/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

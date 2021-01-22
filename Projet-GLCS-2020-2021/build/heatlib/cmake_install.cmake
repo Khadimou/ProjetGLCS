@@ -1,4 +1,4 @@
-# Install script for directory: /data/Projet-GLCS-2020-2021/heatlib
+# Install script for directory: /home/noelle/Desktop/S2/GLCS/Projet_glcs/Projet_NK/ProjetGLCS/Projet-GLCS-2020-2021/heatlib
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

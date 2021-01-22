@@ -276,17 +276,9 @@ __p0009_bits/static_array.hpp
 __p0009_bits/subspan.hpp
 ../vendor/mdspan/include/experimental/__p0009_bits/subspan.hpp
 
-/data/Projet-GLCS-2020-2021/baselib/src/cartesiandistribution2d.cpp
-cartesiandistribution2d.hpp
-/data/Projet-GLCS-2020-2021/baselib/src/cartesiandistribution2d.hpp
-
-/data/Projet-GLCS-2020-2021/baselib/src/distributed2dfield.cpp
-distributed2dfield.hpp
-/data/Projet-GLCS-2020-2021/baselib/src/distributed2dfield.hpp
-
-/data/Projet-GLCS-2020-2021/baselib/src/simulation.cpp
+/home/noelle/Desktop/S2/GLCS/Projet_glcs/Projet_NK/ProjetGLCS/Projet-GLCS-2020-2021/baselib/src/simulation.cpp
 simulation.hpp
-/data/Projet-GLCS-2020-2021/baselib/src/simulation.hpp
+/home/noelle/Desktop/S2/GLCS/Projet_glcs/Projet_NK/ProjetGLCS/Projet-GLCS-2020-2021/baselib/src/simulation.hpp
 
 /usr/lib/x86_64-linux-gnu/openmpi/include/mpi.h
 stddef.h

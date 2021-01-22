@@ -32,10 +32,6 @@ coord2d.hpp
 cartesiandistribution2d.hpp
 ../baselib/include/cartesiandistribution2d.hpp
 
-../baselib/include/initialconditionner.hpp
-distributed2dfield.hpp
-../baselib/include/distributed2dfield.hpp
-
 ../baselib/include/timestep.hpp
 distributed2dfield.hpp
 ../baselib/include/distributed2dfield.hpp
@@ -44,10 +40,6 @@ distributed2dfield.hpp
 configuration.hpp
 -
 timestep.hpp
--
-
-../heatlib/include/fixedconditions.hpp
-initialconditionner.hpp
 -
 
 ../vendor/mdspan/include/experimental/__p0009_bits/accessor_basic.hpp
@@ -268,13 +260,9 @@ __p0009_bits/static_array.hpp
 __p0009_bits/subspan.hpp
 ../vendor/mdspan/include/experimental/__p0009_bits/subspan.hpp
 
-/data/Projet-GLCS-2020-2021/heatlib/src/finitediffheatsolver.cpp
+/home/noelle/Desktop/S2/GLCS/Projet_glcs/Projet_NK/ProjetGLCS/Projet-GLCS-2020-2021/heatlib/src/finitediffheatsolver.cpp
 finitediffheatsolver.hpp
-/data/Projet-GLCS-2020-2021/heatlib/src/finitediffheatsolver.hpp
-
-/data/Projet-GLCS-2020-2021/heatlib/src/fixedconditions.cpp
-fixedconditions.hpp
-/data/Projet-GLCS-2020-2021/heatlib/src/fixedconditions.hpp
+/home/noelle/Desktop/S2/GLCS/Projet_glcs/Projet_NK/ProjetGLCS/Projet-GLCS-2020-2021/heatlib/src/finitediffheatsolver.hpp
 
 /usr/lib/x86_64-linux-gnu/openmpi/include/mpi.h
 stddef.h

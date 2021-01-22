@@ -1,6 +1,0 @@
-/home/khadimou/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/203.5981.166/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/khadimou/Bureau/M2_chps/GLCS/glcs_2020-2021/Projet/Projet-GLCS-2020-2021
-CMake Error at CMakeLists.txt:1 (cmake_minimum_required):
-  CMake 3.18 or higher is required.  You are running version 3.17.3
-
-
--- Configuring incomplete, errors occurred!

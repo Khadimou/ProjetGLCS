@@ -49,7 +49,7 @@ unset(_expectedTargets)
 add_library(std::mdspan INTERFACE IMPORTED)
 
 set_target_properties(std::mdspan PROPERTIES
-  INTERFACE_INCLUDE_DIRECTORIES "/data/Projet-GLCS-2020-2021/vendor/mdspan/include"
+  INTERFACE_INCLUDE_DIRECTORIES "/home/noelle/Desktop/S2/GLCS/Projet_glcs/Projet_NK/ProjetGLCS/Projet-GLCS-2020-2021/vendor/mdspan/include"
 )
 
 # This file does not depend on other imported targets which have

@@ -1,12 +1,14 @@
 #pragma once
 
-// library headers
-#include <configuration.hpp>
+#include <QCommandLineOption>
+#include <QCoreApplication>
+#include <QCommandLineParser>
+#include "configuration.hpp"
 
-class CommandLineConfig:
-		public Configuration
+class CmdParse: 
+        public Configuration
 {
-	/// number of iterations to execute
+    /// number of iterations to execute
 	int m_nb_iter;
 	
 	/// shape of the global data field
@@ -20,13 +22,13 @@ class CommandLineConfig:
 	
 	/// space difference between two consecutive points
 	std::array<double, 2> m_delta_space;
-	
-public:
-	/** Construct a new CommandLineConfig
+
+public: 
+    /** Construct a new CommandLineConfig
 	 * @param argc the number of command-line arguments
 	 * @param argv the values of command-line arguments
 	 */
-	CommandLineConfig(const int argc, const char* const argv[]);
+	CmdParse(int argc, char** const argv);
 	
 	// see overridden function
 	int nb_iter() const override { return m_nb_iter; }
