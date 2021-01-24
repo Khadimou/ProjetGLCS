@@ -3,6 +3,8 @@
 #include <QCommandLineOption>
 #include <QCoreApplication>
 #include <QCommandLineParser>
+#include <QSettings>
+#include <QFile>
 #include "configuration.hpp"
 
 class CmdParse: 
@@ -29,7 +31,7 @@ public:
 	 * @param argv the values of command-line arguments
 	 */
 	CmdParse(int argc, char** const argv);
-	
+
 	// see overridden function
 	int nb_iter() const override { return m_nb_iter; }
 	

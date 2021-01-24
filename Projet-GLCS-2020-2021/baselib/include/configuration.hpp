@@ -8,7 +8,7 @@ class Configuration
 public:
 	/// The destructor
 	virtual ~Configuration() = default;
-	
+
 	/** Access the number of iterations to execute
 	 * @return 
 	 */
