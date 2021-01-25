@@ -33,5 +33,7 @@ public:
 	 * @return the step in space to use
 	 */
 	virtual std::array<double, 2> delta_space() const = 0;
+
+	virtual int freq() const = 0;
 	
 };

@@ -12,8 +12,8 @@ using std::stod;
 
 CommandLineConfig::CommandLineConfig( const int argc, const char* const argv[] )
 {
-	if ( argc != 9 ) {
-		cerr << "Usage: " << argv[0] << " <Nb_iter> <height> <width> <process_height> <process_width> <delta_t> <delta_y> <delta_x>" << endl;
+	if ( argc != 10 ) {
+		cerr << "Usage: " << argv[0] << " <Nb_iter> <height> <width> <process_height> <process_width> <delta_t> <delta_y> <delta_x> <freq>" << endl;
 		exit( 1 );
 	}
 
@@ -25,4 +25,5 @@ CommandLineConfig::CommandLineConfig( const int argc, const char* const argv[] )
 	m_delta_t = stod(argv[6]);
 	m_delta_space[DY] = stod(argv[7]);
 	m_delta_space[DX] = stod(argv[8]);
+	m_freq = stoi(argv[9]);
 }

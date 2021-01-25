@@ -54,19 +54,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/local/bin/cmake
+CMAKE_COMMAND = /usr/bin/cmake
 
 # The command to remove a file.
-RM = /usr/local/bin/cmake -E rm -f
+RM = /usr/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/khadimou/Bureau/M2_chps/GLCS/glcs_2020-2021/Projet/projet
+CMAKE_SOURCE_DIR = /data
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/khadimou/Bureau/M2_chps/GLCS/glcs_2020-2021/Projet/projet/build
+CMAKE_BINARY_DIR = /data/build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -198,14 +198,14 @@ CMakeFiles/simpleheat.dir/all: simpleui/CMakeFiles/simpleui.dir/all
 CMakeFiles/simpleheat.dir/all: writing_datahdf5/CMakeFiles/writing_datahdf5.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/simpleheat.dir/build.make CMakeFiles/simpleheat.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/simpleheat.dir/build.make CMakeFiles/simpleheat.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/khadimou/Bureau/M2_chps/GLCS/glcs_2020-2021/Projet/projet/build/CMakeFiles --progress-num=8,9 "Built target simpleheat"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/data/build/CMakeFiles --progress-num=8,9 "Built target simpleheat"
 .PHONY : CMakeFiles/simpleheat.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/simpleheat.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/khadimou/Bureau/M2_chps/GLCS/glcs_2020-2021/Projet/projet/build/CMakeFiles 15
+	$(CMAKE_COMMAND) -E cmake_progress_start /data/build/CMakeFiles 15
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/simpleheat.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/khadimou/Bureau/M2_chps/GLCS/glcs_2020-2021/Projet/projet/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /data/build/CMakeFiles 0
 .PHONY : CMakeFiles/simpleheat.dir/rule
 
 # Convenience name for target.
@@ -225,14 +225,14 @@ CMakeFiles/simpleheat.dir/clean:
 baselib/CMakeFiles/baselib.dir/all:
 	$(MAKE) $(MAKESILENT) -f baselib/CMakeFiles/baselib.dir/build.make baselib/CMakeFiles/baselib.dir/depend
 	$(MAKE) $(MAKESILENT) -f baselib/CMakeFiles/baselib.dir/build.make baselib/CMakeFiles/baselib.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/khadimou/Bureau/M2_chps/GLCS/glcs_2020-2021/Projet/projet/build/CMakeFiles --progress-num=1,2,3,4 "Built target baselib"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/data/build/CMakeFiles --progress-num=1,2,3,4 "Built target baselib"
 .PHONY : baselib/CMakeFiles/baselib.dir/all
 
 # Build rule for subdir invocation for target.
 baselib/CMakeFiles/baselib.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/khadimou/Bureau/M2_chps/GLCS/glcs_2020-2021/Projet/projet/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /data/build/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 baselib/CMakeFiles/baselib.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/khadimou/Bureau/M2_chps/GLCS/glcs_2020-2021/Projet/projet/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /data/build/CMakeFiles 0
 .PHONY : baselib/CMakeFiles/baselib.dir/rule
 
 # Convenience name for target.
@@ -252,14 +252,14 @@ baselib/CMakeFiles/baselib.dir/clean:
 heatlib/CMakeFiles/heatlib.dir/all: baselib/CMakeFiles/baselib.dir/all
 	$(MAKE) $(MAKESILENT) -f heatlib/CMakeFiles/heatlib.dir/build.make heatlib/CMakeFiles/heatlib.dir/depend
 	$(MAKE) $(MAKESILENT) -f heatlib/CMakeFiles/heatlib.dir/build.make heatlib/CMakeFiles/heatlib.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/khadimou/Bureau/M2_chps/GLCS/glcs_2020-2021/Projet/projet/build/CMakeFiles --progress-num=5,6,7 "Built target heatlib"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/data/build/CMakeFiles --progress-num=5,6,7 "Built target heatlib"
 .PHONY : heatlib/CMakeFiles/heatlib.dir/all
 
 # Build rule for subdir invocation for target.
 heatlib/CMakeFiles/heatlib.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/khadimou/Bureau/M2_chps/GLCS/glcs_2020-2021/Projet/projet/build/CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start /data/build/CMakeFiles 7
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 heatlib/CMakeFiles/heatlib.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/khadimou/Bureau/M2_chps/GLCS/glcs_2020-2021/Projet/projet/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /data/build/CMakeFiles 0
 .PHONY : heatlib/CMakeFiles/heatlib.dir/rule
 
 # Convenience name for target.
@@ -279,14 +279,14 @@ heatlib/CMakeFiles/heatlib.dir/clean:
 simpleui/CMakeFiles/simpleui.dir/all: baselib/CMakeFiles/baselib.dir/all
 	$(MAKE) $(MAKESILENT) -f simpleui/CMakeFiles/simpleui.dir/build.make simpleui/CMakeFiles/simpleui.dir/depend
 	$(MAKE) $(MAKESILENT) -f simpleui/CMakeFiles/simpleui.dir/build.make simpleui/CMakeFiles/simpleui.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/khadimou/Bureau/M2_chps/GLCS/glcs_2020-2021/Projet/projet/build/CMakeFiles --progress-num=10,11,12 "Built target simpleui"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/data/build/CMakeFiles --progress-num=10,11,12 "Built target simpleui"
 .PHONY : simpleui/CMakeFiles/simpleui.dir/all
 
 # Build rule for subdir invocation for target.
 simpleui/CMakeFiles/simpleui.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/khadimou/Bureau/M2_chps/GLCS/glcs_2020-2021/Projet/projet/build/CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start /data/build/CMakeFiles 7
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 simpleui/CMakeFiles/simpleui.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/khadimou/Bureau/M2_chps/GLCS/glcs_2020-2021/Projet/projet/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /data/build/CMakeFiles 0
 .PHONY : simpleui/CMakeFiles/simpleui.dir/rule
 
 # Convenience name for target.
@@ -306,14 +306,14 @@ simpleui/CMakeFiles/simpleui.dir/clean:
 writing_datahdf5/CMakeFiles/writing_datahdf5.dir/all: baselib/CMakeFiles/baselib.dir/all
 	$(MAKE) $(MAKESILENT) -f writing_datahdf5/CMakeFiles/writing_datahdf5.dir/build.make writing_datahdf5/CMakeFiles/writing_datahdf5.dir/depend
 	$(MAKE) $(MAKESILENT) -f writing_datahdf5/CMakeFiles/writing_datahdf5.dir/build.make writing_datahdf5/CMakeFiles/writing_datahdf5.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/khadimou/Bureau/M2_chps/GLCS/glcs_2020-2021/Projet/projet/build/CMakeFiles --progress-num=13,14,15 "Built target writing_datahdf5"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/data/build/CMakeFiles --progress-num=13,14,15 "Built target writing_datahdf5"
 .PHONY : writing_datahdf5/CMakeFiles/writing_datahdf5.dir/all
 
 # Build rule for subdir invocation for target.
 writing_datahdf5/CMakeFiles/writing_datahdf5.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/khadimou/Bureau/M2_chps/GLCS/glcs_2020-2021/Projet/projet/build/CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start /data/build/CMakeFiles 7
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 writing_datahdf5/CMakeFiles/writing_datahdf5.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/khadimou/Bureau/M2_chps/GLCS/glcs_2020-2021/Projet/projet/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /data/build/CMakeFiles 0
 .PHONY : writing_datahdf5/CMakeFiles/writing_datahdf5.dir/rule
 
 # Convenience name for target.

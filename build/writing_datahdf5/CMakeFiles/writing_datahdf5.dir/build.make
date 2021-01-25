@@ -53,19 +53,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/local/bin/cmake
+CMAKE_COMMAND = /usr/bin/cmake
 
 # The command to remove a file.
-RM = /usr/local/bin/cmake -E rm -f
+RM = /usr/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/khadimou/Bureau/M2_chps/GLCS/glcs_2020-2021/Projet/projet
+CMAKE_SOURCE_DIR = /data
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/khadimou/Bureau/M2_chps/GLCS/glcs_2020-2021/Projet/projet/build
+CMAKE_BINARY_DIR = /data/build
 
 # Include any dependencies generated for this target.
 include writing_datahdf5/CMakeFiles/writing_datahdf5.dir/depend.make
@@ -78,29 +78,29 @@ include writing_datahdf5/CMakeFiles/writing_datahdf5.dir/flags.make
 
 writing_datahdf5/CMakeFiles/writing_datahdf5.dir/src/commandlineconfig.cpp.o: writing_datahdf5/CMakeFiles/writing_datahdf5.dir/flags.make
 writing_datahdf5/CMakeFiles/writing_datahdf5.dir/src/commandlineconfig.cpp.o: ../writing_datahdf5/src/commandlineconfig.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/khadimou/Bureau/M2_chps/GLCS/glcs_2020-2021/Projet/projet/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object writing_datahdf5/CMakeFiles/writing_datahdf5.dir/src/commandlineconfig.cpp.o"
-	cd /home/khadimou/Bureau/M2_chps/GLCS/glcs_2020-2021/Projet/projet/build/writing_datahdf5 && /opt/intel/compilers_and_libraries_2020.0.166/linux/mpi/intel64/bin/mpicxx $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/writing_datahdf5.dir/src/commandlineconfig.cpp.o -c /home/khadimou/Bureau/M2_chps/GLCS/glcs_2020-2021/Projet/projet/writing_datahdf5/src/commandlineconfig.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object writing_datahdf5/CMakeFiles/writing_datahdf5.dir/src/commandlineconfig.cpp.o"
+	cd /data/build/writing_datahdf5 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/writing_datahdf5.dir/src/commandlineconfig.cpp.o -c /data/writing_datahdf5/src/commandlineconfig.cpp
 
 writing_datahdf5/CMakeFiles/writing_datahdf5.dir/src/commandlineconfig.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/writing_datahdf5.dir/src/commandlineconfig.cpp.i"
-	cd /home/khadimou/Bureau/M2_chps/GLCS/glcs_2020-2021/Projet/projet/build/writing_datahdf5 && /opt/intel/compilers_and_libraries_2020.0.166/linux/mpi/intel64/bin/mpicxx $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/khadimou/Bureau/M2_chps/GLCS/glcs_2020-2021/Projet/projet/writing_datahdf5/src/commandlineconfig.cpp > CMakeFiles/writing_datahdf5.dir/src/commandlineconfig.cpp.i
+	cd /data/build/writing_datahdf5 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data/writing_datahdf5/src/commandlineconfig.cpp > CMakeFiles/writing_datahdf5.dir/src/commandlineconfig.cpp.i
 
 writing_datahdf5/CMakeFiles/writing_datahdf5.dir/src/commandlineconfig.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/writing_datahdf5.dir/src/commandlineconfig.cpp.s"
-	cd /home/khadimou/Bureau/M2_chps/GLCS/glcs_2020-2021/Projet/projet/build/writing_datahdf5 && /opt/intel/compilers_and_libraries_2020.0.166/linux/mpi/intel64/bin/mpicxx $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/khadimou/Bureau/M2_chps/GLCS/glcs_2020-2021/Projet/projet/writing_datahdf5/src/commandlineconfig.cpp -o CMakeFiles/writing_datahdf5.dir/src/commandlineconfig.cpp.s
+	cd /data/build/writing_datahdf5 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data/writing_datahdf5/src/commandlineconfig.cpp -o CMakeFiles/writing_datahdf5.dir/src/commandlineconfig.cpp.s
 
 writing_datahdf5/CMakeFiles/writing_datahdf5.dir/src/writing_hdf5.cpp.o: writing_datahdf5/CMakeFiles/writing_datahdf5.dir/flags.make
 writing_datahdf5/CMakeFiles/writing_datahdf5.dir/src/writing_hdf5.cpp.o: ../writing_datahdf5/src/writing_hdf5.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/khadimou/Bureau/M2_chps/GLCS/glcs_2020-2021/Projet/projet/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object writing_datahdf5/CMakeFiles/writing_datahdf5.dir/src/writing_hdf5.cpp.o"
-	cd /home/khadimou/Bureau/M2_chps/GLCS/glcs_2020-2021/Projet/projet/build/writing_datahdf5 && /opt/intel/compilers_and_libraries_2020.0.166/linux/mpi/intel64/bin/mpicxx $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/writing_datahdf5.dir/src/writing_hdf5.cpp.o -c /home/khadimou/Bureau/M2_chps/GLCS/glcs_2020-2021/Projet/projet/writing_datahdf5/src/writing_hdf5.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object writing_datahdf5/CMakeFiles/writing_datahdf5.dir/src/writing_hdf5.cpp.o"
+	cd /data/build/writing_datahdf5 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/writing_datahdf5.dir/src/writing_hdf5.cpp.o -c /data/writing_datahdf5/src/writing_hdf5.cpp
 
 writing_datahdf5/CMakeFiles/writing_datahdf5.dir/src/writing_hdf5.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/writing_datahdf5.dir/src/writing_hdf5.cpp.i"
-	cd /home/khadimou/Bureau/M2_chps/GLCS/glcs_2020-2021/Projet/projet/build/writing_datahdf5 && /opt/intel/compilers_and_libraries_2020.0.166/linux/mpi/intel64/bin/mpicxx $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/khadimou/Bureau/M2_chps/GLCS/glcs_2020-2021/Projet/projet/writing_datahdf5/src/writing_hdf5.cpp > CMakeFiles/writing_datahdf5.dir/src/writing_hdf5.cpp.i
+	cd /data/build/writing_datahdf5 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data/writing_datahdf5/src/writing_hdf5.cpp > CMakeFiles/writing_datahdf5.dir/src/writing_hdf5.cpp.i
 
 writing_datahdf5/CMakeFiles/writing_datahdf5.dir/src/writing_hdf5.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/writing_datahdf5.dir/src/writing_hdf5.cpp.s"
-	cd /home/khadimou/Bureau/M2_chps/GLCS/glcs_2020-2021/Projet/projet/build/writing_datahdf5 && /opt/intel/compilers_and_libraries_2020.0.166/linux/mpi/intel64/bin/mpicxx $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/khadimou/Bureau/M2_chps/GLCS/glcs_2020-2021/Projet/projet/writing_datahdf5/src/writing_hdf5.cpp -o CMakeFiles/writing_datahdf5.dir/src/writing_hdf5.cpp.s
+	cd /data/build/writing_datahdf5 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data/writing_datahdf5/src/writing_hdf5.cpp -o CMakeFiles/writing_datahdf5.dir/src/writing_hdf5.cpp.s
 
 # Object files for target writing_datahdf5
 writing_datahdf5_OBJECTS = \
@@ -114,9 +114,9 @@ writing_datahdf5/libwriting_datahdf5.a: writing_datahdf5/CMakeFiles/writing_data
 writing_datahdf5/libwriting_datahdf5.a: writing_datahdf5/CMakeFiles/writing_datahdf5.dir/src/writing_hdf5.cpp.o
 writing_datahdf5/libwriting_datahdf5.a: writing_datahdf5/CMakeFiles/writing_datahdf5.dir/build.make
 writing_datahdf5/libwriting_datahdf5.a: writing_datahdf5/CMakeFiles/writing_datahdf5.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/khadimou/Bureau/M2_chps/GLCS/glcs_2020-2021/Projet/projet/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libwriting_datahdf5.a"
-	cd /home/khadimou/Bureau/M2_chps/GLCS/glcs_2020-2021/Projet/projet/build/writing_datahdf5 && $(CMAKE_COMMAND) -P CMakeFiles/writing_datahdf5.dir/cmake_clean_target.cmake
-	cd /home/khadimou/Bureau/M2_chps/GLCS/glcs_2020-2021/Projet/projet/build/writing_datahdf5 && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/writing_datahdf5.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/data/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libwriting_datahdf5.a"
+	cd /data/build/writing_datahdf5 && $(CMAKE_COMMAND) -P CMakeFiles/writing_datahdf5.dir/cmake_clean_target.cmake
+	cd /data/build/writing_datahdf5 && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/writing_datahdf5.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 writing_datahdf5/CMakeFiles/writing_datahdf5.dir/build: writing_datahdf5/libwriting_datahdf5.a
@@ -124,10 +124,10 @@ writing_datahdf5/CMakeFiles/writing_datahdf5.dir/build: writing_datahdf5/libwrit
 .PHONY : writing_datahdf5/CMakeFiles/writing_datahdf5.dir/build
 
 writing_datahdf5/CMakeFiles/writing_datahdf5.dir/clean:
-	cd /home/khadimou/Bureau/M2_chps/GLCS/glcs_2020-2021/Projet/projet/build/writing_datahdf5 && $(CMAKE_COMMAND) -P CMakeFiles/writing_datahdf5.dir/cmake_clean.cmake
+	cd /data/build/writing_datahdf5 && $(CMAKE_COMMAND) -P CMakeFiles/writing_datahdf5.dir/cmake_clean.cmake
 .PHONY : writing_datahdf5/CMakeFiles/writing_datahdf5.dir/clean
 
 writing_datahdf5/CMakeFiles/writing_datahdf5.dir/depend:
-	cd /home/khadimou/Bureau/M2_chps/GLCS/glcs_2020-2021/Projet/projet/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/khadimou/Bureau/M2_chps/GLCS/glcs_2020-2021/Projet/projet /home/khadimou/Bureau/M2_chps/GLCS/glcs_2020-2021/Projet/projet/writing_datahdf5 /home/khadimou/Bureau/M2_chps/GLCS/glcs_2020-2021/Projet/projet/build /home/khadimou/Bureau/M2_chps/GLCS/glcs_2020-2021/Projet/projet/build/writing_datahdf5 /home/khadimou/Bureau/M2_chps/GLCS/glcs_2020-2021/Projet/projet/build/writing_datahdf5/CMakeFiles/writing_datahdf5.dir/DependInfo.cmake --color=$(COLOR)
+	cd /data/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /data /data/writing_datahdf5 /data/build /data/build/writing_datahdf5 /data/build/writing_datahdf5/CMakeFiles/writing_datahdf5.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : writing_datahdf5/CMakeFiles/writing_datahdf5.dir/depend
 

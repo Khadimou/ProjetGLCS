@@ -1,4 +1,4 @@
-# Install script for directory: /home/khadimou/Bureau/M2_chps/GLCS/glcs_2020-2021/Projet/projet/vendor/mdspan
+# Install script for directory: /data/vendor/mdspan
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -46,7 +46,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/cmake/mdspanTargets.cmake")
     file(DIFFERENT EXPORT_FILE_CHANGED FILES
          "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/cmake/mdspanTargets.cmake"
-         "/home/khadimou/Bureau/M2_chps/GLCS/glcs_2020-2021/Projet/projet/build/mdspan/CMakeFiles/Export/cmake/mdspanTargets.cmake")
+         "/data/build/mdspan/CMakeFiles/Export/cmake/mdspanTargets.cmake")
     if(EXPORT_FILE_CHANGED)
       file(GLOB OLD_CONFIG_FILES "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/cmake/mdspanTargets-*.cmake")
       if(OLD_CONFIG_FILES)
@@ -55,17 +55,17 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
       endif()
     endif()
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/cmake" TYPE FILE FILES "/home/khadimou/Bureau/M2_chps/GLCS/glcs_2020-2021/Projet/projet/build/mdspan/CMakeFiles/Export/cmake/mdspanTargets.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/cmake" TYPE FILE FILES "/data/build/mdspan/CMakeFiles/Export/cmake/mdspanTargets.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/khadimou/Bureau/M2_chps/GLCS/glcs_2020-2021/Projet/projet/vendor/mdspan/include/experimental")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/data/vendor/mdspan/include/experimental")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/cmake" TYPE FILE FILES
-    "/home/khadimou/Bureau/M2_chps/GLCS/glcs_2020-2021/Projet/projet/build/mdspan/MDSpanConfig.cmake"
-    "/home/khadimou/Bureau/M2_chps/GLCS/glcs_2020-2021/Projet/projet/build/mdspan/MDSpanConfigVersion.cmake"
+    "/data/build/mdspan/MDSpanConfig.cmake"
+    "/data/build/mdspan/MDSpanConfigVersion.cmake"
     )
 endif()
 

@@ -1,4 +1,4 @@
-# Install script for directory: /home/khadimou/Bureau/M2_chps/GLCS/glcs_2020-2021/Projet/projet/simpleui
+# Install script for directory: /data/simpleui
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

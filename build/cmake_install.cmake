@@ -1,4 +1,4 @@
-# Install script for directory: /home/khadimou/Bureau/M2_chps/GLCS/glcs_2020-2021/Projet/projet
+# Install script for directory: /data
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,22 +44,22 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/khadimou/Bureau/M2_chps/GLCS/glcs_2020-2021/Projet/projet/build/baselib/cmake_install.cmake")
+  include("/data/build/baselib/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/khadimou/Bureau/M2_chps/GLCS/glcs_2020-2021/Projet/projet/build/heatlib/cmake_install.cmake")
+  include("/data/build/heatlib/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/khadimou/Bureau/M2_chps/GLCS/glcs_2020-2021/Projet/projet/build/simpleui/cmake_install.cmake")
+  include("/data/build/simpleui/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/khadimou/Bureau/M2_chps/GLCS/glcs_2020-2021/Projet/projet/build/writing_datahdf5/cmake_install.cmake")
+  include("/data/build/writing_datahdf5/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -70,5 +70,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/khadimou/Bureau/M2_chps/GLCS/glcs_2020-2021/Projet/projet/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/data/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

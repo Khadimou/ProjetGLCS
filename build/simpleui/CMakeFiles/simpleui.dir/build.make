@@ -53,19 +53,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/local/bin/cmake
+CMAKE_COMMAND = /usr/bin/cmake
 
 # The command to remove a file.
-RM = /usr/local/bin/cmake -E rm -f
+RM = /usr/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/khadimou/Bureau/M2_chps/GLCS/glcs_2020-2021/Projet/projet
+CMAKE_SOURCE_DIR = /data
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/khadimou/Bureau/M2_chps/GLCS/glcs_2020-2021/Projet/projet/build
+CMAKE_BINARY_DIR = /data/build
 
 # Include any dependencies generated for this target.
 include simpleui/CMakeFiles/simpleui.dir/depend.make
@@ -78,29 +78,29 @@ include simpleui/CMakeFiles/simpleui.dir/flags.make
 
 simpleui/CMakeFiles/simpleui.dir/src/commandlineconfig.cpp.o: simpleui/CMakeFiles/simpleui.dir/flags.make
 simpleui/CMakeFiles/simpleui.dir/src/commandlineconfig.cpp.o: ../simpleui/src/commandlineconfig.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/khadimou/Bureau/M2_chps/GLCS/glcs_2020-2021/Projet/projet/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object simpleui/CMakeFiles/simpleui.dir/src/commandlineconfig.cpp.o"
-	cd /home/khadimou/Bureau/M2_chps/GLCS/glcs_2020-2021/Projet/projet/build/simpleui && /opt/intel/compilers_and_libraries_2020.0.166/linux/mpi/intel64/bin/mpicxx $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/simpleui.dir/src/commandlineconfig.cpp.o -c /home/khadimou/Bureau/M2_chps/GLCS/glcs_2020-2021/Projet/projet/simpleui/src/commandlineconfig.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object simpleui/CMakeFiles/simpleui.dir/src/commandlineconfig.cpp.o"
+	cd /data/build/simpleui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/simpleui.dir/src/commandlineconfig.cpp.o -c /data/simpleui/src/commandlineconfig.cpp
 
 simpleui/CMakeFiles/simpleui.dir/src/commandlineconfig.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/simpleui.dir/src/commandlineconfig.cpp.i"
-	cd /home/khadimou/Bureau/M2_chps/GLCS/glcs_2020-2021/Projet/projet/build/simpleui && /opt/intel/compilers_and_libraries_2020.0.166/linux/mpi/intel64/bin/mpicxx $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/khadimou/Bureau/M2_chps/GLCS/glcs_2020-2021/Projet/projet/simpleui/src/commandlineconfig.cpp > CMakeFiles/simpleui.dir/src/commandlineconfig.cpp.i
+	cd /data/build/simpleui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data/simpleui/src/commandlineconfig.cpp > CMakeFiles/simpleui.dir/src/commandlineconfig.cpp.i
 
 simpleui/CMakeFiles/simpleui.dir/src/commandlineconfig.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/simpleui.dir/src/commandlineconfig.cpp.s"
-	cd /home/khadimou/Bureau/M2_chps/GLCS/glcs_2020-2021/Projet/projet/build/simpleui && /opt/intel/compilers_and_libraries_2020.0.166/linux/mpi/intel64/bin/mpicxx $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/khadimou/Bureau/M2_chps/GLCS/glcs_2020-2021/Projet/projet/simpleui/src/commandlineconfig.cpp -o CMakeFiles/simpleui.dir/src/commandlineconfig.cpp.s
+	cd /data/build/simpleui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data/simpleui/src/commandlineconfig.cpp -o CMakeFiles/simpleui.dir/src/commandlineconfig.cpp.s
 
 simpleui/CMakeFiles/simpleui.dir/src/screenprinter.cpp.o: simpleui/CMakeFiles/simpleui.dir/flags.make
 simpleui/CMakeFiles/simpleui.dir/src/screenprinter.cpp.o: ../simpleui/src/screenprinter.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/khadimou/Bureau/M2_chps/GLCS/glcs_2020-2021/Projet/projet/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object simpleui/CMakeFiles/simpleui.dir/src/screenprinter.cpp.o"
-	cd /home/khadimou/Bureau/M2_chps/GLCS/glcs_2020-2021/Projet/projet/build/simpleui && /opt/intel/compilers_and_libraries_2020.0.166/linux/mpi/intel64/bin/mpicxx $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/simpleui.dir/src/screenprinter.cpp.o -c /home/khadimou/Bureau/M2_chps/GLCS/glcs_2020-2021/Projet/projet/simpleui/src/screenprinter.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object simpleui/CMakeFiles/simpleui.dir/src/screenprinter.cpp.o"
+	cd /data/build/simpleui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/simpleui.dir/src/screenprinter.cpp.o -c /data/simpleui/src/screenprinter.cpp
 
 simpleui/CMakeFiles/simpleui.dir/src/screenprinter.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/simpleui.dir/src/screenprinter.cpp.i"
-	cd /home/khadimou/Bureau/M2_chps/GLCS/glcs_2020-2021/Projet/projet/build/simpleui && /opt/intel/compilers_and_libraries_2020.0.166/linux/mpi/intel64/bin/mpicxx $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/khadimou/Bureau/M2_chps/GLCS/glcs_2020-2021/Projet/projet/simpleui/src/screenprinter.cpp > CMakeFiles/simpleui.dir/src/screenprinter.cpp.i
+	cd /data/build/simpleui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data/simpleui/src/screenprinter.cpp > CMakeFiles/simpleui.dir/src/screenprinter.cpp.i
 
 simpleui/CMakeFiles/simpleui.dir/src/screenprinter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/simpleui.dir/src/screenprinter.cpp.s"
-	cd /home/khadimou/Bureau/M2_chps/GLCS/glcs_2020-2021/Projet/projet/build/simpleui && /opt/intel/compilers_and_libraries_2020.0.166/linux/mpi/intel64/bin/mpicxx $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/khadimou/Bureau/M2_chps/GLCS/glcs_2020-2021/Projet/projet/simpleui/src/screenprinter.cpp -o CMakeFiles/simpleui.dir/src/screenprinter.cpp.s
+	cd /data/build/simpleui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data/simpleui/src/screenprinter.cpp -o CMakeFiles/simpleui.dir/src/screenprinter.cpp.s
 
 # Object files for target simpleui
 simpleui_OBJECTS = \
@@ -114,9 +114,9 @@ simpleui/libsimpleui.a: simpleui/CMakeFiles/simpleui.dir/src/commandlineconfig.c
 simpleui/libsimpleui.a: simpleui/CMakeFiles/simpleui.dir/src/screenprinter.cpp.o
 simpleui/libsimpleui.a: simpleui/CMakeFiles/simpleui.dir/build.make
 simpleui/libsimpleui.a: simpleui/CMakeFiles/simpleui.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/khadimou/Bureau/M2_chps/GLCS/glcs_2020-2021/Projet/projet/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libsimpleui.a"
-	cd /home/khadimou/Bureau/M2_chps/GLCS/glcs_2020-2021/Projet/projet/build/simpleui && $(CMAKE_COMMAND) -P CMakeFiles/simpleui.dir/cmake_clean_target.cmake
-	cd /home/khadimou/Bureau/M2_chps/GLCS/glcs_2020-2021/Projet/projet/build/simpleui && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/simpleui.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/data/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libsimpleui.a"
+	cd /data/build/simpleui && $(CMAKE_COMMAND) -P CMakeFiles/simpleui.dir/cmake_clean_target.cmake
+	cd /data/build/simpleui && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/simpleui.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 simpleui/CMakeFiles/simpleui.dir/build: simpleui/libsimpleui.a
@@ -124,10 +124,10 @@ simpleui/CMakeFiles/simpleui.dir/build: simpleui/libsimpleui.a
 .PHONY : simpleui/CMakeFiles/simpleui.dir/build
 
 simpleui/CMakeFiles/simpleui.dir/clean:
-	cd /home/khadimou/Bureau/M2_chps/GLCS/glcs_2020-2021/Projet/projet/build/simpleui && $(CMAKE_COMMAND) -P CMakeFiles/simpleui.dir/cmake_clean.cmake
+	cd /data/build/simpleui && $(CMAKE_COMMAND) -P CMakeFiles/simpleui.dir/cmake_clean.cmake
 .PHONY : simpleui/CMakeFiles/simpleui.dir/clean
 
 simpleui/CMakeFiles/simpleui.dir/depend:
-	cd /home/khadimou/Bureau/M2_chps/GLCS/glcs_2020-2021/Projet/projet/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/khadimou/Bureau/M2_chps/GLCS/glcs_2020-2021/Projet/projet /home/khadimou/Bureau/M2_chps/GLCS/glcs_2020-2021/Projet/projet/simpleui /home/khadimou/Bureau/M2_chps/GLCS/glcs_2020-2021/Projet/projet/build /home/khadimou/Bureau/M2_chps/GLCS/glcs_2020-2021/Projet/projet/build/simpleui /home/khadimou/Bureau/M2_chps/GLCS/glcs_2020-2021/Projet/projet/build/simpleui/CMakeFiles/simpleui.dir/DependInfo.cmake --color=$(COLOR)
+	cd /data/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /data /data/simpleui /data/build /data/build/simpleui /data/build/simpleui/CMakeFiles/simpleui.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : simpleui/CMakeFiles/simpleui.dir/depend
 
