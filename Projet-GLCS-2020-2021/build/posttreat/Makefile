@@ -99,17 +99,6 @@ install/local/fast: preinstall/fast
 	/home/noelle/cmake-3.18.5-Linux-x86_64/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/noelle/cmake-3.18.5-Linux-x86_64/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
@@ -120,6 +109,17 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/home/noelle/cmake-3.18.5-Linux-x86_64/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # Special rule for the target install
 install: preinstall
@@ -145,14 +145,14 @@ list_install_components/fast: list_install_components
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/noelle/Desktop/S2/GLCS/Projet_glcs/Projet_NK/ProjetGLCS/Projet-GLCS-2020-2021/build/CMakeFiles /home/noelle/Desktop/S2/GLCS/Projet_glcs/Projet_NK/ProjetGLCS/Projet-GLCS-2020-2021/build//CMakeFiles/progress.marks
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
+	cd /home/noelle/Desktop/S2/GLCS/Projet_glcs/Projet_NK/ProjetGLCS/Projet-GLCS-2020-2021/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/noelle/Desktop/S2/GLCS/Projet_glcs/Projet_NK/ProjetGLCS/Projet-GLCS-2020-2021/build/CMakeFiles /home/noelle/Desktop/S2/GLCS/Projet_glcs/Projet_NK/ProjetGLCS/Projet-GLCS-2020-2021/build/posttreat//CMakeFiles/progress.marks
+	cd /home/noelle/Desktop/S2/GLCS/Projet_glcs/Projet_NK/ProjetGLCS/Projet-GLCS-2020-2021/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 posttreat/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/noelle/Desktop/S2/GLCS/Projet_glcs/Projet_NK/ProjetGLCS/Projet-GLCS-2020-2021/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 clean
+	cd /home/noelle/Desktop/S2/GLCS/Projet_glcs/Projet_NK/ProjetGLCS/Projet-GLCS-2020-2021/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 posttreat/clean
 .PHONY : clean
 
 # The main clean target
@@ -162,123 +162,60 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /home/noelle/Desktop/S2/GLCS/Projet_glcs/Projet_NK/ProjetGLCS/Projet-GLCS-2020-2021/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 posttreat/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /home/noelle/Desktop/S2/GLCS/Projet_glcs/Projet_NK/ProjetGLCS/Projet-GLCS-2020-2021/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 posttreat/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/noelle/Desktop/S2/GLCS/Projet_glcs/Projet_NK/ProjetGLCS/Projet-GLCS-2020-2021/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named simpleheat
+# Convenience name for target.
+posttreat/CMakeFiles/posttreat.dir/rule:
+	cd /home/noelle/Desktop/S2/GLCS/Projet_glcs/Projet_NK/ProjetGLCS/Projet-GLCS-2020-2021/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 posttreat/CMakeFiles/posttreat.dir/rule
+.PHONY : posttreat/CMakeFiles/posttreat.dir/rule
 
-# Build rule for target.
-simpleheat: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 simpleheat
-.PHONY : simpleheat
+# Convenience name for target.
+posttreat: posttreat/CMakeFiles/posttreat.dir/rule
 
-# fast build rule for target.
-simpleheat/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/simpleheat.dir/build.make CMakeFiles/simpleheat.dir/build
-.PHONY : simpleheat/fast
-
-#=============================================================================
-# Target rules for targets named baselib
-
-# Build rule for target.
-baselib: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 baselib
-.PHONY : baselib
-
-# fast build rule for target.
-baselib/fast:
-	$(MAKE) $(MAKESILENT) -f baselib/CMakeFiles/baselib.dir/build.make baselib/CMakeFiles/baselib.dir/build
-.PHONY : baselib/fast
-
-#=============================================================================
-# Target rules for targets named heatlib
-
-# Build rule for target.
-heatlib: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 heatlib
-.PHONY : heatlib
-
-# fast build rule for target.
-heatlib/fast:
-	$(MAKE) $(MAKESILENT) -f heatlib/CMakeFiles/heatlib.dir/build.make heatlib/CMakeFiles/heatlib.dir/build
-.PHONY : heatlib/fast
-
-#=============================================================================
-# Target rules for targets named simpleui
-
-# Build rule for target.
-simpleui: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 simpleui
-.PHONY : simpleui
-
-# fast build rule for target.
-simpleui/fast:
-	$(MAKE) $(MAKESILENT) -f simpleui/CMakeFiles/simpleui.dir/build.make simpleui/CMakeFiles/simpleui.dir/build
-.PHONY : simpleui/fast
-
-#=============================================================================
-# Target rules for targets named cliparser
-
-# Build rule for target.
-cliparser: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cliparser
-.PHONY : cliparser
-
-# fast build rule for target.
-cliparser/fast:
-	$(MAKE) $(MAKESILENT) -f cliparser/CMakeFiles/cliparser.dir/build.make cliparser/CMakeFiles/cliparser.dir/build
-.PHONY : cliparser/fast
-
-#=============================================================================
-# Target rules for targets named posttreat
-
-# Build rule for target.
-posttreat: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 posttreat
 .PHONY : posttreat
 
 # fast build rule for target.
 posttreat/fast:
-	$(MAKE) $(MAKESILENT) -f posttreat/CMakeFiles/posttreat.dir/build.make posttreat/CMakeFiles/posttreat.dir/build
+	cd /home/noelle/Desktop/S2/GLCS/Projet_glcs/Projet_NK/ProjetGLCS/Projet-GLCS-2020-2021/build && $(MAKE) $(MAKESILENT) -f posttreat/CMakeFiles/posttreat.dir/build.make posttreat/CMakeFiles/posttreat.dir/build
 .PHONY : posttreat/fast
 
-simpleheat.o: simpleheat.cpp.o
+src/dataavg.o: src/dataavg.cpp.o
 
-.PHONY : simpleheat.o
+.PHONY : src/dataavg.o
 
 # target to build an object file
-simpleheat.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/simpleheat.dir/build.make CMakeFiles/simpleheat.dir/simpleheat.cpp.o
-.PHONY : simpleheat.cpp.o
+src/dataavg.cpp.o:
+	cd /home/noelle/Desktop/S2/GLCS/Projet_glcs/Projet_NK/ProjetGLCS/Projet-GLCS-2020-2021/build && $(MAKE) $(MAKESILENT) -f posttreat/CMakeFiles/posttreat.dir/build.make posttreat/CMakeFiles/posttreat.dir/src/dataavg.cpp.o
+.PHONY : src/dataavg.cpp.o
 
-simpleheat.i: simpleheat.cpp.i
+src/dataavg.i: src/dataavg.cpp.i
 
-.PHONY : simpleheat.i
+.PHONY : src/dataavg.i
 
 # target to preprocess a source file
-simpleheat.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/simpleheat.dir/build.make CMakeFiles/simpleheat.dir/simpleheat.cpp.i
-.PHONY : simpleheat.cpp.i
+src/dataavg.cpp.i:
+	cd /home/noelle/Desktop/S2/GLCS/Projet_glcs/Projet_NK/ProjetGLCS/Projet-GLCS-2020-2021/build && $(MAKE) $(MAKESILENT) -f posttreat/CMakeFiles/posttreat.dir/build.make posttreat/CMakeFiles/posttreat.dir/src/dataavg.cpp.i
+.PHONY : src/dataavg.cpp.i
 
-simpleheat.s: simpleheat.cpp.s
+src/dataavg.s: src/dataavg.cpp.s
 
-.PHONY : simpleheat.s
+.PHONY : src/dataavg.s
 
 # target to generate assembly for a file
-simpleheat.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/simpleheat.dir/build.make CMakeFiles/simpleheat.dir/simpleheat.cpp.s
-.PHONY : simpleheat.cpp.s
+src/dataavg.cpp.s:
+	cd /home/noelle/Desktop/S2/GLCS/Projet_glcs/Projet_NK/ProjetGLCS/Projet-GLCS-2020-2021/build && $(MAKE) $(MAKESILENT) -f posttreat/CMakeFiles/posttreat.dir/build.make posttreat/CMakeFiles/posttreat.dir/src/dataavg.cpp.s
+.PHONY : src/dataavg.cpp.s
 
 # Help Target
 help:
@@ -292,15 +229,10 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... baselib"
-	@echo "... cliparser"
-	@echo "... heatlib"
 	@echo "... posttreat"
-	@echo "... simpleheat"
-	@echo "... simpleui"
-	@echo "... simpleheat.o"
-	@echo "... simpleheat.i"
-	@echo "... simpleheat.s"
+	@echo "... src/dataavg.o"
+	@echo "... src/dataavg.i"
+	@echo "... src/dataavg.s"
 .PHONY : help
 
 
@@ -312,6 +244,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/noelle/Desktop/S2/GLCS/Projet_glcs/Projet_NK/ProjetGLCS/Projet-GLCS-2020-2021/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

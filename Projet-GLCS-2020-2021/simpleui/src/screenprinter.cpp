@@ -5,6 +5,7 @@
 
 // the implemented class (last)
 #include "screenprinter.hpp"
+#include <dataavg.hpp>
 
 using std::cout;
 using std::endl;
@@ -50,4 +51,6 @@ void ScreenPrinter::simulation_updated( const Distributed2DField& data )
 	cout<<flush;
 	MPI_Barrier(data.distribution().communicator());
 	sleep_for(milliseconds(1));
+
+DataAvg DataAvg( data);
 }

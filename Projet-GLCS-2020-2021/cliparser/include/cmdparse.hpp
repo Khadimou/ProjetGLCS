@@ -25,6 +25,9 @@ class CmdParse:
 	/// space difference between two consecutive points
 	std::array<double, 2> m_delta_space;
 
+	/// the frequency of writing to file 
+	int m_freq;
+
 public: 
     /** Construct a new CommandLineConfig
 	 * @param argc the number of command-line arguments
@@ -46,5 +49,7 @@ public:
 	
 	// see overridden function
 	std::array<double, 2> delta_space() const override { return m_delta_space; }
-	
+
+	// see overridden function
+	int freq() const override { return m_freq; }	
 };

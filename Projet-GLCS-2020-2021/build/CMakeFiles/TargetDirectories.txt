@@ -39,3 +39,10 @@
 /home/noelle/Desktop/S2/GLCS/Projet_glcs/Projet_NK/ProjetGLCS/Projet-GLCS-2020-2021/build/cliparser/CMakeFiles/list_install_components.dir
 /home/noelle/Desktop/S2/GLCS/Projet_glcs/Projet_NK/ProjetGLCS/Projet-GLCS-2020-2021/build/cliparser/CMakeFiles/edit_cache.dir
 /home/noelle/Desktop/S2/GLCS/Projet_glcs/Projet_NK/ProjetGLCS/Projet-GLCS-2020-2021/build/cliparser/CMakeFiles/rebuild_cache.dir
+/home/noelle/Desktop/S2/GLCS/Projet_glcs/Projet_NK/ProjetGLCS/Projet-GLCS-2020-2021/build/posttreat/CMakeFiles/install/strip.dir
+/home/noelle/Desktop/S2/GLCS/Projet_glcs/Projet_NK/ProjetGLCS/Projet-GLCS-2020-2021/build/posttreat/CMakeFiles/install/local.dir
+/home/noelle/Desktop/S2/GLCS/Projet_glcs/Projet_NK/ProjetGLCS/Projet-GLCS-2020-2021/build/posttreat/CMakeFiles/posttreat.dir
+/home/noelle/Desktop/S2/GLCS/Projet_glcs/Projet_NK/ProjetGLCS/Projet-GLCS-2020-2021/build/posttreat/CMakeFiles/edit_cache.dir
+/home/noelle/Desktop/S2/GLCS/Projet_glcs/Projet_NK/ProjetGLCS/Projet-GLCS-2020-2021/build/posttreat/CMakeFiles/rebuild_cache.dir
+/home/noelle/Desktop/S2/GLCS/Projet_glcs/Projet_NK/ProjetGLCS/Projet-GLCS-2020-2021/build/posttreat/CMakeFiles/install.dir
+/home/noelle/Desktop/S2/GLCS/Projet_glcs/Projet_NK/ProjetGLCS/Projet-GLCS-2020-2021/build/posttreat/CMakeFiles/list_install_components.dir

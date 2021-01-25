@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/noelle/Desktop/S2/GLCS/Projet_glcs/Projet_NK/ProjetGLCS/Projet-GLCS-2020-2021/simpleui/include -I/home/noelle/Desktop/S2/GLCS/Projet_glcs/Projet_NK/ProjetGLCS/Projet-GLCS-2020-2021/baselib/include -I/home/noelle/Desktop/S2/GLCS/Projet_glcs/Projet_NK/ProjetGLCS/Projet-GLCS-2020-2021/vendor/mdspan/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi -isystem /usr/lib/x86_64-linux-gnu/openmpi/include
+CXX_INCLUDES = -I/home/noelle/Desktop/S2/GLCS/Projet_glcs/Projet_NK/ProjetGLCS/Projet-GLCS-2020-2021/simpleui/include -I/home/noelle/Desktop/S2/GLCS/Projet_glcs/Projet_NK/ProjetGLCS/Projet-GLCS-2020-2021/baselib/include -I/home/noelle/Desktop/S2/GLCS/Projet_glcs/Projet_NK/ProjetGLCS/Projet-GLCS-2020-2021/vendor/mdspan/include -I/home/noelle/Desktop/S2/GLCS/Projet_glcs/Projet_NK/ProjetGLCS/Projet-GLCS-2020-2021/posttreat/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi -isystem /usr/lib/x86_64-linux-gnu/openmpi/include
 
 CXX_FLAGS = -pthread
 

@@ -32,19 +32,9 @@ coord2d.hpp
 cartesiandistribution2d.hpp
 ../baselib/include/cartesiandistribution2d.hpp
 
-../baselib/include/simulationobserver.hpp
-distributed2dfield.hpp
-../baselib/include/distributed2dfield.hpp
-
 ../posttreat/include/dataavg.hpp
 datareduce.hpp
 ../posttreat/include/datareduce.hpp
-
-../simpleui/include/screenprinter.hpp
-simulationobserver.hpp
--
-datareduce.hpp
--
 
 ../vendor/mdspan/include/experimental/__p0009_bits/accessor_basic.hpp
 macros.hpp
@@ -264,17 +254,13 @@ __p0009_bits/static_array.hpp
 __p0009_bits/subspan.hpp
 ../vendor/mdspan/include/experimental/__p0009_bits/subspan.hpp
 
-/home/noelle/Desktop/S2/GLCS/Projet_glcs/Projet_NK/ProjetGLCS/Projet-GLCS-2020-2021/simpleui/src/screenprinter.cpp
-chrono
+/home/noelle/Desktop/S2/GLCS/Projet_glcs/Projet_NK/ProjetGLCS/Projet-GLCS-2020-2021/posttreat/src/dataavg.cpp
+cstdlib
 -
 iostream
 -
-thread
--
-screenprinter.hpp
-/home/noelle/Desktop/S2/GLCS/Projet_glcs/Projet_NK/ProjetGLCS/Projet-GLCS-2020-2021/simpleui/src/screenprinter.hpp
 dataavg.hpp
--
+/home/noelle/Desktop/S2/GLCS/Projet_glcs/Projet_NK/ProjetGLCS/Projet-GLCS-2020-2021/posttreat/src/dataavg.hpp
 
 /usr/lib/x86_64-linux-gnu/openmpi/include/mpi.h
 stddef.h

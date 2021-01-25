@@ -5,6 +5,7 @@ CMakeFiles/simpleheat.dir/simpleheat.cpp.o
  ../baselib/include/cartesiandistribution2d.hpp
  ../baselib/include/configuration.hpp
  ../baselib/include/coord2d.hpp
+ ../baselib/include/datareduce.hpp
  ../baselib/include/distributed2dfield.hpp
  ../baselib/include/initialconditionner.hpp
  ../baselib/include/simulation.hpp

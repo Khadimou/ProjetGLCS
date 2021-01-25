@@ -1,0 +1,2 @@
+/usr/bin/ar qc libposttreat.a CMakeFiles/posttreat.dir/src/dataavg.cpp.o
+/usr/bin/ranlib libposttreat.a

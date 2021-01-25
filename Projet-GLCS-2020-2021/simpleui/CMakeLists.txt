@@ -4,5 +4,5 @@ add_library(simpleui
 		src/screenprinter.cpp
 )
 target_include_directories(simpleui PUBLIC include/)
-target_link_libraries(simpleui PUBLIC GLCS2020_project::baselib)
+target_link_libraries(simpleui PUBLIC GLCS2020_project::baselib posttreat )
 add_library(GLCS2020_project::simpleui ALIAS simpleui)

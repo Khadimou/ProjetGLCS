@@ -24,6 +24,7 @@ static int DEFAULT_DELTA_X = 1;
 static int DEFAULT_DELTA_Y = 1;
 static QString DEFAULT_DELTA_T = "0.125";
 static QString DEFAULT_CONFIG_FILE="../default.ini";
+static int DEFAULT_WRITE_FREQ=1;
 
 
 CmdParse::CmdParse( int argc, char** const argv )
@@ -50,6 +51,7 @@ CmdParse::CmdParse( int argc, char** const argv )
 		DEFAULT_WIDTH = settings.value("params/width", DEFAULT_WIDTH).toInt(); 
 		DEFAULT_PROC_HEIGHT = settings.value("params/process_height", DEFAULT_PROC_HEIGHT).toInt(); 
 		DEFAULT_PROC_WIDTH = settings.value("params/process_width", DEFAULT_PROC_WIDTH).toInt(); 
+		DEFAULT_WRITE_FREQ = settings.value("params/freq", DEFAULT_WRITE_FREQ).toInt(); 
 	}
 
 	//Adding the options with their default values
@@ -117,6 +119,13 @@ CmdParse::CmdParse( int argc, char** const argv )
 			std::to_string(DEFAULT_DELTA_Y).c_str());
     parser.addOption(deltaYOption);
 
+	// Add the writting frequency to the hdf5 file option (--delta_y)
+    QCommandLineOption freqOption("freq",
+			QCoreApplication::translate("simpleheat", "frequence of writting to the hdf5 file"),
+			QCoreApplication::translate("simpleheat", "frequence"),
+			std::to_string(DEFAULT_WRITE_FREQ).c_str());
+    parser.addOption(freqOption);
+
 	// Process the actual command line arguments given by the user
     parser.process(app);
 
@@ -137,6 +146,7 @@ CmdParse::CmdParse( int argc, char** const argv )
 			m_delta_t = (parser.isSet(deltaTOption)) ? parser.value(deltaTOption).toDouble() : settings.value("params/delta_t", DEFAULT_DELTA_T).toDouble();
 			m_delta_space[DX] = (parser.isSet(deltaXOption)) ? parser.value(deltaXOption).toInt() : settings.value("params/delta_x", DEFAULT_DELTA_X).toInt();
 			m_delta_space[DY] = (parser.isSet(deltaYOption)) ? parser.value(deltaYOption).toInt() : settings.value("params/delta_y", DEFAULT_DELTA_Y).toInt();	
+			m_freq=(parser.isSet(freqOption)) ? parser.value(freqOption).toInt() : settings.value("params/freq", DEFAULT_WRITE_FREQ).toInt();		
 		}
 		else
 		{
@@ -156,6 +166,7 @@ CmdParse::CmdParse( int argc, char** const argv )
 		m_delta_t = parser.value(deltaTOption).toDouble();
 		m_delta_space[DX] = parser.value(deltaXOption).toDouble();
 		m_delta_space[DY] = parser.value(deltaYOption).toDouble();
+		m_freq = parser.value(freqOption).toInt();
 	}
 	
 	// show the values 
@@ -172,6 +183,7 @@ CmdParse::CmdParse( int argc, char** const argv )
 		cout << "delta_t = " << m_delta_t <<"\n";
 		cout << "delta_x = " << m_delta_space[DX] <<"\n";
 		cout << "delta_y = " << m_delta_space[DY] <<"\n";
+		cout << "freq = " << m_freq <<"\n";
 	}
 
 }

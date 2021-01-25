@@ -18,6 +18,10 @@ distributed2dfield.hpp
 
 ../baselib/include/coord2d.hpp
 
+../baselib/include/datareduce.hpp
+distributed2dfield.hpp
+../baselib/include/distributed2dfield.hpp
+
 ../baselib/include/distributed2dfield.hpp
 mpi.h
 -
@@ -84,6 +88,8 @@ initialconditionner.hpp
 
 ../simpleui/include/screenprinter.hpp
 simulationobserver.hpp
+-
+datareduce.hpp
 -
 
 ../vendor/mdspan/include/experimental/__p0009_bits/accessor_basic.hpp
