@@ -14,6 +14,7 @@ using std::chrono::milliseconds;
 
 void WritingData::simulation_updated(const Distributed2DField& data){
 
+    // file that will contain data
     const char* file_name = "my_file.h5";
 
     // create the file access property list
@@ -23,9 +24,10 @@ void WritingData::simulation_updated(const Distributed2DField& data){
     // Create the file
     const hid_t h5file = H5Fcreate(file_name, H5F_ACC_TRUNC, H5P_DEFAULT, fapl);
 
+    // size of the data distribution over MPI
+    int mpi_size = data.distribution().size();
     // create the file dataspace
-    int mpi_size = data.distribution().size(); //MPI_Comm_size(MPI_COMM_WORLD, &mpi_size);
-    const std::vector<hsize_t> file_dims { data.noghost_view().extent(DX), data.noghost_view().extent(DY) };
+    const std::vector<hsize_t> file_dims { data.noghost_view().extent(DY), data.noghost_view().extent(DX) };
     const hid_t file_space = H5Screate_simple(file_dims.size(), file_dims.data(), NULL);
 
     // create the dataset
@@ -33,16 +35,16 @@ void WritingData::simulation_updated(const Distributed2DField& data){
 
     // select the region we want to write in the file dataspace
     const std::vector<hsize_t> file_start { 0, 0 };
-    const std::vector<hsize_t> file_count { data.noghost_view().extent(DX), data.noghost_view().extent(DY) };
+    const std::vector<hsize_t> file_count { data.noghost_view().extent(DY), data.noghost_view().extent(DX) };
     H5Sselect_hyperslab(file_space, H5S_SELECT_SET, file_start.data(), NULL, file_count.data(), NULL );
 
     // create the memory dataspace
-    const std::vector<hsize_t> mem_dims { data.noghost_view().extent(DX), data.noghost_view().extent(DY) };
+    const std::vector<hsize_t> mem_dims { data.noghost_view().extent(DY), data.noghost_view().extent(DX) };
     const hid_t mem_space =  H5Screate_simple(mem_dims.size(), mem_dims.data(), NULL);
 
     // select the region we want to write in the memory dataspace
     const std::vector<hsize_t> mem_start { 0, 0 };
-    const std::vector<hsize_t> mem_count { data.noghost_view().extent(DX), data.noghost_view().extent(DY) };
+    const std::vector<hsize_t> mem_count { data.noghost_view().extent(DY), data.noghost_view().extent(DX) };
     H5Sselect_hyperslab(mem_space, H5S_SELECT_SET, mem_start.data(), NULL, mem_count.data(), NULL );
 
     // create the data transfer property list
@@ -52,26 +54,8 @@ void WritingData::simulation_updated(const Distributed2DField& data){
     if(data.distribution().rank() == 0){
         // write data to HDF5!
         H5Dwrite(dataset, H5T_NATIVE_DOUBLE, mem_space, file_space, xfer_plist, data.noghost_view().data());
-    }
-
-    /*for ( int pyy = data.distribution().extent( DY )-1; pyy >=0 ; --pyy ) {
-        for (int yy = data.noghost_view().extent(DY) - 1; yy >= 0; --yy) {
-            for (int pxx = 0; pxx < data.distribution().extent(DX); ++pxx) {
-                if (data.distribution().coord(DX) == pxx && data.distribution().coord(DY) == pyy) {
-
-                    for (int xx = 0; xx < data.noghost_view().extent(DX); ++xx) {
-                        if (0 != data.noghost_view(yy, xx)) {
-                            std::vector<double> tmp(mem_dims.size(), data.noghost_view(yy, xx));
-                            H5Dwrite(dataset, H5T_NATIVE_DOUBLE, mem_space, file_space, xfer_plist, tmp.data());
-                        }
-
-                    }
-
-                }
-
-            }
-        }
-    }*/
+    }else
+        H5Dwrite(dataset, H5T_NATIVE_DOUBLE, mem_space, file_space, xfer_plist, data.noghost_view().data());
 
     H5Pclose(fapl);
     H5Pclose(xfer_plist);

@@ -34,6 +34,9 @@ public:
 	 */
 	virtual std::array<double, 2> delta_space() const = 0;
 
+	/** Access the iterations chosen by the user
+	 * @return the freq
+	 */
 	virtual int freq() const = 0;
 	
 };
