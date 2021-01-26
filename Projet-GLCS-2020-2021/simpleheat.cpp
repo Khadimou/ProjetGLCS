@@ -6,6 +6,7 @@
 #include "fixedconditions.hpp"
 #include "simulation.hpp"
 #include "screenprinter.hpp"
+
 //mpirun -n 2 ./simpleheat --nb_iter=10 --height=4 --width=8 --process_height=1 --process_width=2 --delta_t=0.125 --delta_x=1 --delta_y=1
 int main( int argc, char* argv[] )
 {

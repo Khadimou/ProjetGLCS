@@ -15,16 +15,16 @@ using std::sprintf;
 
 
 // the default values 
-static int DEFAULT_ITER = 10;
-static int DEFAULT_HEIGHT = 4;
-static int DEFAULT_WIDTH = 8;
-static int DEFAULT_PROC_HEIGHT = 1;
-static int DEFAULT_PROC_WIDTH = 2;
-static int DEFAULT_DELTA_X = 1;
-static int DEFAULT_DELTA_Y = 1;
-static QString DEFAULT_DELTA_T = "0.125";
+static int DEFAULT_ITER = 0;
+static int DEFAULT_HEIGHT = 0;
+static int DEFAULT_WIDTH = 0;
+static int DEFAULT_PROC_HEIGHT = 0;
+static int DEFAULT_PROC_WIDTH = 0;
+static int DEFAULT_DELTA_X = 0;
+static int DEFAULT_DELTA_Y = 0;
+static QString DEFAULT_DELTA_T = "0";
 static QString DEFAULT_CONFIG_FILE="../default.ini";
-static int DEFAULT_WRITE_FREQ=1;
+static int DEFAULT_WRITE_FREQ=0;
 
 
 CmdParse::CmdParse( int argc, char** const argv )
@@ -170,8 +170,10 @@ CmdParse::CmdParse( int argc, char** const argv )
 	}
 	
 	// show the values 
-	int rank;
+	int rank=0;
+	int size=0;
 	MPI_Comm_rank(MPI_COMM_WORLD,&rank);
+	MPI_Comm_size(MPI_COMM_WORLD,&size);
 	if(rank==0) 
 	{
 		cout << "Executing application with: \n";
@@ -186,4 +188,9 @@ CmdParse::CmdParse( int argc, char** const argv )
 		cout << "freq = " << m_freq <<"\n";
 	}
 
+	// check errors
+	if(m_dist_extents[DY]*m_dist_extents[DX]!=size){
+		cerr << "the number of processes doesn't correspond to the given shape" << "\n";
+		exit(1);
+	}
 }

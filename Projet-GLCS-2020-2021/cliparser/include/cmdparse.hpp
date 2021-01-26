@@ -29,7 +29,7 @@ class CmdParse:
 	int m_freq;
 
 public: 
-    /** Construct a new CommandLineConfig
+    /** Construct a new command line parser
 	 * @param argc the number of command-line arguments
 	 * @param argv the values of command-line arguments
 	 */
@@ -52,4 +52,5 @@ public:
 
 	// see overridden function
 	int freq() const override { return m_freq; }	
+
 };
