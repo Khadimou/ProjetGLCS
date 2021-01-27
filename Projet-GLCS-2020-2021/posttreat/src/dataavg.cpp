@@ -19,5 +19,4 @@ DataAvg::DataAvg( const Distributed2DField& data)
 		}
 	}
 	m_data_avg=somme/(data.noghost_view().extent( DY )*data.noghost_view().extent( DX ));
-	cout << "somme"<< somme  <<"the average" << average() << "\n";
 }
