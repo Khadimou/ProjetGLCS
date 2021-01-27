@@ -52,5 +52,7 @@ void ScreenPrinter::simulation_updated( const Distributed2DField& data )
 	MPI_Barrier(data.distribution().communicator());
 	sleep_for(milliseconds(1));
 
-DataAvg DataAvg( data);
+DataAvg d(data);
+cout << " \n the avvvvvvv" <<d.average();
+
 }

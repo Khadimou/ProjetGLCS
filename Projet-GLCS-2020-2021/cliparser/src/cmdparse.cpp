@@ -84,14 +84,14 @@ CmdParse::CmdParse( int argc, char** const argv )
 			std::to_string(DEFAULT_WIDTH).c_str());
     parser.addOption(widthOption);
 
-	// Add height of the global data field option (--process_height)
+	// Add height of the data distribution option (--process_height)
     QCommandLineOption processHeightOption("process_height",
 			QCoreApplication::translate("simpleheat", "height of the data distribution"),
 			QCoreApplication::translate("simpleheat", "process_height"),
 			std::to_string(DEFAULT_PROC_HEIGHT).c_str());
     parser.addOption(processHeightOption);
 
-	// Add height of the global data field option (--process_width)
+	// Add width of the data distribution option (--process_width)
     QCommandLineOption processWidthOption("process_width",
 			QCoreApplication::translate("simpleheat", "width of the data distribution"),
 			QCoreApplication::translate("simpleheat", "process_width"),
