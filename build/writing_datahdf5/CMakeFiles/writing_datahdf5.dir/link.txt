@@ -1,2 +1,0 @@
-/usr/bin/ar qc libwriting_datahdf5.a CMakeFiles/writing_datahdf5.dir/src/commandlineconfig.cpp.o CMakeFiles/writing_datahdf5.dir/src/writing_hdf5.cpp.o
-/usr/bin/ranlib libwriting_datahdf5.a

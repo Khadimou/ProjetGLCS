@@ -10,6 +10,8 @@ add_subdirectory("vendor/mdspan/" "mdspan" EXCLUDE_FROM_ALL)
 add_subdirectory(baselib)
 add_subdirectory(heatlib)
 add_subdirectory(simpleui)
+add_subdirectory(cliparser)
+add_subdirectory(posttreat)
 add_subdirectory(writing_datahdf5)
 
 add_executable(simpleheat
@@ -20,6 +22,9 @@ target_link_libraries(simpleheat PRIVATE
 		GLCS2020_project::baselib
 		GLCS2020_project::heatlib
 		GLCS2020_project::simpleui
+		GLCS2020_project::cliparser
+		GLCS2020_project::posttreat
+		MPI::MPI_CXX)
 		GLCS2020_project::writing_datahdf5
 		hdf5::hdf5
 		MPI::MPI_CXX)

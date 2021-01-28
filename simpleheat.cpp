@@ -1,19 +1,23 @@
 #include <mpi.h>
 
-#include "commandlineconfig.hpp"
+#include "cmdparse.hpp"
+//#include "commandlineconfig.hpp"
 #include "finitediffheatsolver.hpp"
 #include "fixedconditions.hpp"
 #include "simulation.hpp"
 #include "screenprinter.hpp"
+
+//mpirun -n 2 ./simpleheat --nb_iter=10 --height=4 --width=8 --process_height=1 --process_width=2 --delta_t=0.125 --delta_x=1 --delta_y=1
 #include "writing_hdf5.hpp"
 
 int main( int argc, char* argv[] )
 {
 	// initialize the MPI library
 	MPI_Init( &argc, &argv );
-
 	// Construct the command-line arguments parser
-	CommandLineConfig config( argc, argv );
+	//CommandLineConfig config( argc, argv );
+	CmdParse config( argc, argv );
+
 	// construct the heat equation solver
 	FinitediffHeatSolver heat_solver( config );
 	// construct the initial condition setter
