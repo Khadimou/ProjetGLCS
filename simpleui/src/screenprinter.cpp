@@ -5,7 +5,10 @@
 
 // the implemented class (last)
 #include "screenprinter.hpp"
+<<<<<<< HEAD
 #include <dataavg.hpp>
+=======
+>>>>>>> 84f621186237381f864af6857a2b585eb6a4be9e
 
 using std::cout;
 using std::endl;
@@ -15,7 +18,10 @@ using std::chrono::milliseconds;
 
 void ScreenPrinter::simulation_updated( const Distributed2DField& data )
 {
+<<<<<<< HEAD
 	/*
+=======
+>>>>>>> 84f621186237381f864af6857a2b585eb6a4be9e
 	if ( data.distribution().rank() == 0 ) {
 		cout << "at t="<<data.time()<<" : [" << endl;
 	}
@@ -52,10 +58,13 @@ void ScreenPrinter::simulation_updated( const Distributed2DField& data )
 	cout<<flush;
 	MPI_Barrier(data.distribution().communicator());
 	sleep_for(milliseconds(1));
+<<<<<<< HEAD
 */
 
 DataAvg d(data);
 cout << " \n at t="<< data.time() << " process "<< data.distribution().rank()<< " mean data=" <<d.average();
 
 
+=======
+>>>>>>> 84f621186237381f864af6857a2b585eb6a4be9e
 }

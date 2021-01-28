@@ -8,6 +8,8 @@
 #include "screenprinter.hpp"
 
 //mpirun -n 2 ./simpleheat --nb_iter=10 --height=4 --width=8 --process_height=1 --process_width=2 --delta_t=0.125 --delta_x=1 --delta_y=1
+#include "writing_hdf5.hpp"
+
 int main( int argc, char* argv[] )
 {
 	// initialize the MPI library
@@ -25,6 +27,12 @@ int main( int argc, char* argv[] )
 	// Add a printer to screen to observe the simulation
 	ScreenPrinter printer;
 	simulation.observe( printer );
+
+	// Add a function to write data to format hdf5
+	WritingData wd;
+
+	simulation.observe(wd);
+
 	// run the simulation
 	simulation.run();
 
