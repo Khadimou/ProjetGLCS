@@ -9,6 +9,7 @@ add_subdirectory(baselib)
 add_subdirectory(heatlib)
 add_subdirectory(simpleui)
 add_subdirectory(cliparser)
+add_subdirectory(posttreat)
 
 add_executable(simpleheat
 		simpleheat.cpp
@@ -18,4 +19,5 @@ target_link_libraries(simpleheat PRIVATE
 		GLCS2020_project::heatlib
 		GLCS2020_project::simpleui
 		GLCS2020_project::cliparser
+		GLCS2020_project::posttreat
 		MPI::MPI_CXX)

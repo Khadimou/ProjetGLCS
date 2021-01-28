@@ -24,6 +24,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../vendor/mdspan/include"
   "../heatlib/include"
   "../simpleui/include"
+  "../posttreat/include"
   "../cliparser/include"
   "/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi"
   "/usr/lib/x86_64-linux-gnu/openmpi/include"
@@ -42,6 +43,7 @@ set(CMAKE_TARGET_LINKED_INFO_FILES
   "/home/noelle/Desktop/S2/GLCS/Projet_glcs/Projet_NK/ProjetGLCS/Projet-GLCS-2020-2021/build/heatlib/CMakeFiles/heatlib.dir/DependInfo.cmake"
   "/home/noelle/Desktop/S2/GLCS/Projet_glcs/Projet_NK/ProjetGLCS/Projet-GLCS-2020-2021/build/simpleui/CMakeFiles/simpleui.dir/DependInfo.cmake"
   "/home/noelle/Desktop/S2/GLCS/Projet_glcs/Projet_NK/ProjetGLCS/Projet-GLCS-2020-2021/build/cliparser/CMakeFiles/cliparser.dir/DependInfo.cmake"
+  "/home/noelle/Desktop/S2/GLCS/Projet_glcs/Projet_NK/ProjetGLCS/Projet-GLCS-2020-2021/build/posttreat/CMakeFiles/posttreat.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

@@ -3,6 +3,8 @@
 #include <QCommandLineOption>
 #include <QCoreApplication>
 #include <QCommandLineParser>
+#include <QSettings>
+#include <QFile>
 #include "configuration.hpp"
 
 class CmdParse: 
@@ -23,13 +25,16 @@ class CmdParse:
 	/// space difference between two consecutive points
 	std::array<double, 2> m_delta_space;
 
+	/// the frequency of writing to file 
+	int m_freq;
+
 public: 
-    /** Construct a new CommandLineConfig
+    /** Construct a new command line parser
 	 * @param argc the number of command-line arguments
 	 * @param argv the values of command-line arguments
 	 */
 	CmdParse(int argc, char** const argv);
-	
+
 	// see overridden function
 	int nb_iter() const override { return m_nb_iter; }
 	
@@ -44,5 +49,8 @@ public:
 	
 	// see overridden function
 	std::array<double, 2> delta_space() const override { return m_delta_space; }
-	
+
+	// see overridden function
+	int freq() const override { return m_freq; }	
+
 };

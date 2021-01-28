@@ -4,8 +4,10 @@
 simpleui/CMakeFiles/simpleui.dir/src/screenprinter.cpp.o
  ../baselib/include/cartesiandistribution2d.hpp
  ../baselib/include/coord2d.hpp
+ ../baselib/include/datareduce.hpp
  ../baselib/include/distributed2dfield.hpp
  ../baselib/include/simulationobserver.hpp
+ ../posttreat/include/dataavg.hpp
  ../simpleui/include/screenprinter.hpp
  ../vendor/mdspan/include/experimental/__p0009_bits/accessor_basic.hpp
  ../vendor/mdspan/include/experimental/__p0009_bits/all_type.hpp

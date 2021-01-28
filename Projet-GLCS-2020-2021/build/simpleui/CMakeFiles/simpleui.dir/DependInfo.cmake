@@ -13,6 +13,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../simpleui/include"
   "../baselib/include"
   "../vendor/mdspan/include"
+  "../posttreat/include"
   "/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi"
   "/usr/lib/x86_64-linux-gnu/openmpi/include"
   )
@@ -20,6 +21,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
   "/home/noelle/Desktop/S2/GLCS/Projet_glcs/Projet_NK/ProjetGLCS/Projet-GLCS-2020-2021/build/baselib/CMakeFiles/baselib.dir/DependInfo.cmake"
+  "/home/noelle/Desktop/S2/GLCS/Projet_glcs/Projet_NK/ProjetGLCS/Projet-GLCS-2020-2021/build/posttreat/CMakeFiles/posttreat.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

@@ -5,6 +5,7 @@ CMakeFiles/simpleheat.dir/simpleheat.cpp.o
  ../baselib/include/cartesiandistribution2d.hpp
  ../baselib/include/configuration.hpp
  ../baselib/include/coord2d.hpp
+ ../baselib/include/datareduce.hpp
  ../baselib/include/distributed2dfield.hpp
  ../baselib/include/initialconditionner.hpp
  ../baselib/include/simulation.hpp
@@ -37,6 +38,8 @@ CMakeFiles/simpleheat.dir/simpleheat.cpp.o
  /home/noelle/anaconda3/include/qt/QtCore/QCommandLineOption
  /home/noelle/anaconda3/include/qt/QtCore/QCommandLineParser
  /home/noelle/anaconda3/include/qt/QtCore/QCoreApplication
+ /home/noelle/anaconda3/include/qt/QtCore/QFile
+ /home/noelle/anaconda3/include/qt/QtCore/QSettings
  /home/noelle/anaconda3/include/qt/QtCore/qalgorithms.h
  /home/noelle/anaconda3/include/qt/QtCore/qarraydata.h
  /home/noelle/anaconda3/include/qt/QtCore/qatomic.h
@@ -53,18 +56,25 @@ CMakeFiles/simpleheat.dir/simpleheat.cpp.o
  /home/noelle/anaconda3/include/qt/QtCore/qconfig-bootstrapped.h
  /home/noelle/anaconda3/include/qt/QtCore/qconfig.h
  /home/noelle/anaconda3/include/qt/QtCore/qcontainerfwd.h
+ /home/noelle/anaconda3/include/qt/QtCore/qcontiguouscache.h
  /home/noelle/anaconda3/include/qt/QtCore/qcoreapplication.h
  /home/noelle/anaconda3/include/qt/QtCore/qcoreevent.h
+ /home/noelle/anaconda3/include/qt/QtCore/qdebug.h
  /home/noelle/anaconda3/include/qt/QtCore/qeventloop.h
+ /home/noelle/anaconda3/include/qt/QtCore/qfile.h
+ /home/noelle/anaconda3/include/qt/QtCore/qfiledevice.h
  /home/noelle/anaconda3/include/qt/QtCore/qflags.h
  /home/noelle/anaconda3/include/qt/QtCore/qgenericatomic.h
  /home/noelle/anaconda3/include/qt/QtCore/qglobal.h
  /home/noelle/anaconda3/include/qt/QtCore/qglobalstatic.h
  /home/noelle/anaconda3/include/qt/QtCore/qhash.h
  /home/noelle/anaconda3/include/qt/QtCore/qhashfunctions.h
+ /home/noelle/anaconda3/include/qt/QtCore/qiodevice.h
  /home/noelle/anaconda3/include/qt/QtCore/qiterator.h
  /home/noelle/anaconda3/include/qt/QtCore/qlist.h
+ /home/noelle/anaconda3/include/qt/QtCore/qlocale.h
  /home/noelle/anaconda3/include/qt/QtCore/qlogging.h
+ /home/noelle/anaconda3/include/qt/QtCore/qmap.h
  /home/noelle/anaconda3/include/qt/QtCore/qmetatype.h
  /home/noelle/anaconda3/include/qt/QtCore/qmutex.h
  /home/noelle/anaconda3/include/qt/QtCore/qnamespace.h
@@ -74,11 +84,16 @@ CMakeFiles/simpleheat.dir/simpleheat.cpp.o
  /home/noelle/anaconda3/include/qt/QtCore/qobjectdefs.h
  /home/noelle/anaconda3/include/qt/QtCore/qobjectdefs_impl.h
  /home/noelle/anaconda3/include/qt/QtCore/qpair.h
+ /home/noelle/anaconda3/include/qt/QtCore/qpoint.h
  /home/noelle/anaconda3/include/qt/QtCore/qprocessordetection.h
  /home/noelle/anaconda3/include/qt/QtCore/qrefcount.h
  /home/noelle/anaconda3/include/qt/QtCore/qregexp.h
  /home/noelle/anaconda3/include/qt/QtCore/qscopedpointer.h
+ /home/noelle/anaconda3/include/qt/QtCore/qset.h
+ /home/noelle/anaconda3/include/qt/QtCore/qsettings.h
  /home/noelle/anaconda3/include/qt/QtCore/qshareddata.h
+ /home/noelle/anaconda3/include/qt/QtCore/qsharedpointer.h
+ /home/noelle/anaconda3/include/qt/QtCore/qsharedpointer_impl.h
  /home/noelle/anaconda3/include/qt/QtCore/qstring.h
  /home/noelle/anaconda3/include/qt/QtCore/qstringbuilder.h
  /home/noelle/anaconda3/include/qt/QtCore/qstringlist.h
@@ -86,8 +101,11 @@ CMakeFiles/simpleheat.dir/simpleheat.cpp.o
  /home/noelle/anaconda3/include/qt/QtCore/qsysinfo.h
  /home/noelle/anaconda3/include/qt/QtCore/qsystemdetection.h
  /home/noelle/anaconda3/include/qt/QtCore/qtcore-config.h
+ /home/noelle/anaconda3/include/qt/QtCore/qtextstream.h
  /home/noelle/anaconda3/include/qt/QtCore/qtypeinfo.h
+ /home/noelle/anaconda3/include/qt/QtCore/qvariant.h
  /home/noelle/anaconda3/include/qt/QtCore/qvarlengtharray.h
+ /home/noelle/anaconda3/include/qt/QtCore/qvector.h
  /home/noelle/anaconda3/include/qt/QtCore/qversiontagging.h
  /usr/lib/x86_64-linux-gnu/openmpi/include/mpi.h
  /usr/lib/x86_64-linux-gnu/openmpi/include/mpi_portable_platform.h

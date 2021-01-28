@@ -240,6 +240,19 @@ cliparser/fast:
 	$(MAKE) $(MAKESILENT) -f cliparser/CMakeFiles/cliparser.dir/build.make cliparser/CMakeFiles/cliparser.dir/build
 .PHONY : cliparser/fast
 
+#=============================================================================
+# Target rules for targets named posttreat
+
+# Build rule for target.
+posttreat: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 posttreat
+.PHONY : posttreat
+
+# fast build rule for target.
+posttreat/fast:
+	$(MAKE) $(MAKESILENT) -f posttreat/CMakeFiles/posttreat.dir/build.make posttreat/CMakeFiles/posttreat.dir/build
+.PHONY : posttreat/fast
+
 simpleheat.o: simpleheat.cpp.o
 
 .PHONY : simpleheat.o
@@ -282,6 +295,7 @@ help:
 	@echo "... baselib"
 	@echo "... cliparser"
 	@echo "... heatlib"
+	@echo "... posttreat"
 	@echo "... simpleheat"
 	@echo "... simpleui"
 	@echo "... simpleheat.o"

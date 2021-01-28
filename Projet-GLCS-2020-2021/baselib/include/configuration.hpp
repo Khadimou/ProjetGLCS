@@ -8,7 +8,7 @@ class Configuration
 public:
 	/// The destructor
 	virtual ~Configuration() = default;
-	
+
 	/** Access the number of iterations to execute
 	 * @return 
 	 */
@@ -33,5 +33,11 @@ public:
 	 * @return the step in space to use
 	 */
 	virtual std::array<double, 2> delta_space() const = 0;
+
+	/** Access the writing to hdf5 file frequency
+	 * @return the writing to hdf5 file frequency
+	 * 
+	 */
+	virtual int freq() const=0;
 	
 };
