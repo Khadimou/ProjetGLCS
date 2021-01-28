@@ -17,8 +17,6 @@ distributed2dfield.hpp
 ../baselib/include/distributed2dfield.hpp
 
 ../baselib/include/coord2d.hpp
-array
--
 
 ../baselib/include/distributed2dfield.hpp
 mpi.h
@@ -277,6 +275,14 @@ __p0009_bits/static_array.hpp
 ../vendor/mdspan/include/experimental/__p0009_bits/static_array.hpp
 __p0009_bits/subspan.hpp
 ../vendor/mdspan/include/experimental/__p0009_bits/subspan.hpp
+
+/data/baselib/src/cartesiandistribution2d.cpp
+cartesiandistribution2d.hpp
+/data/baselib/src/cartesiandistribution2d.hpp
+
+/data/baselib/src/distributed2dfield.cpp
+distributed2dfield.hpp
+/data/baselib/src/distributed2dfield.hpp
 
 /data/baselib/src/simulation.cpp
 simulation.hpp

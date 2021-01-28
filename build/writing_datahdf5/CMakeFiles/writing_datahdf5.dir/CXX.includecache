@@ -12,9 +12,11 @@ mpi.h
 coord2d.hpp
 ../baselib/include/coord2d.hpp
 
+../baselib/include/configuration.hpp
+distributed2dfield.hpp
+../baselib/include/distributed2dfield.hpp
+
 ../baselib/include/coord2d.hpp
-array
--
 
 ../baselib/include/distributed2dfield.hpp
 mpi.h
@@ -252,11 +254,25 @@ __p0009_bits/static_array.hpp
 __p0009_bits/subspan.hpp
 ../vendor/mdspan/include/experimental/__p0009_bits/subspan.hpp
 
+../writing_datahdf5/include/commandlineconfig.hpp
+configuration.hpp
+-
+
 ../writing_datahdf5/include/writing_hdf5.hpp
 simulationobserver.hpp
 -
 hdf5.h
 -
+
+/data/writing_datahdf5/src/commandlineconfig.cpp
+cstdlib
+-
+iostream
+-
+string
+-
+commandlineconfig.hpp
+/data/writing_datahdf5/src/commandlineconfig.hpp
 
 /data/writing_datahdf5/src/writing_hdf5.cpp
 chrono

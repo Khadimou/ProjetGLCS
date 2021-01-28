@@ -1,6 +1,5 @@
 #pragma once
 
-#include <array>
 /// The dimension identifiers
 enum Dimension2D : int { DY = 0, DX = 1 };
 

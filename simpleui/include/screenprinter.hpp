@@ -2,6 +2,7 @@
 
 // library headers
 #include <simulationobserver.hpp>
+#include <datareduce.hpp>
 
 class ScreenPrinter
 		: public SimulationObserver

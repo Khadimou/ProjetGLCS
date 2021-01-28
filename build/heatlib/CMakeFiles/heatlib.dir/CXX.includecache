@@ -17,8 +17,6 @@ distributed2dfield.hpp
 ../baselib/include/distributed2dfield.hpp
 
 ../baselib/include/coord2d.hpp
-array
--
 
 ../baselib/include/distributed2dfield.hpp
 mpi.h
@@ -34,6 +32,10 @@ coord2d.hpp
 cartesiandistribution2d.hpp
 ../baselib/include/cartesiandistribution2d.hpp
 
+../baselib/include/initialconditionner.hpp
+distributed2dfield.hpp
+../baselib/include/distributed2dfield.hpp
+
 ../baselib/include/timestep.hpp
 distributed2dfield.hpp
 ../baselib/include/distributed2dfield.hpp
@@ -42,6 +44,10 @@ distributed2dfield.hpp
 configuration.hpp
 -
 timestep.hpp
+-
+
+../heatlib/include/fixedconditions.hpp
+initialconditionner.hpp
 -
 
 ../vendor/mdspan/include/experimental/__p0009_bits/accessor_basic.hpp
@@ -265,6 +271,10 @@ __p0009_bits/subspan.hpp
 /data/heatlib/src/finitediffheatsolver.cpp
 finitediffheatsolver.hpp
 /data/heatlib/src/finitediffheatsolver.hpp
+
+/data/heatlib/src/fixedconditions.cpp
+fixedconditions.hpp
+/data/heatlib/src/fixedconditions.hpp
 
 /usr/lib/x86_64-linux-gnu/openmpi/include/mpi.h
 stddef.h

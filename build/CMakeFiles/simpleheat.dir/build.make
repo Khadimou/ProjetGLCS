@@ -101,8 +101,15 @@ simpleheat: CMakeFiles/simpleheat.dir/build.make
 simpleheat: baselib/libbaselib.a
 simpleheat: heatlib/libheatlib.a
 simpleheat: simpleui/libsimpleui.a
+simpleheat: cliparser/libcliparser.a
+simpleheat: posttreat/libposttreat.a
 simpleheat: writing_datahdf5/libwriting_datahdf5.a
 simpleheat: /usr/lib/x86_64-linux-gnu/hdf5/openmpi/libhdf5.so
+simpleheat: /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.15.2
+simpleheat: /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.15.2
+simpleheat: /usr/lib/x86_64-linux-gnu/libQt5Qml.so.5.15.2
+simpleheat: /usr/lib/x86_64-linux-gnu/libQt5Network.so.5.15.2
+simpleheat: /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.2
 simpleheat: baselib/libbaselib.a
 simpleheat: /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi_cxx.so
 simpleheat: /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so

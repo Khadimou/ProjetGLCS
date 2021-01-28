@@ -12,13 +12,11 @@ mpi.h
 coord2d.hpp
 ../baselib/include/coord2d.hpp
 
-../baselib/include/configuration.hpp
+../baselib/include/coord2d.hpp
+
+../baselib/include/datareduce.hpp
 distributed2dfield.hpp
 ../baselib/include/distributed2dfield.hpp
-
-../baselib/include/coord2d.hpp
-array
--
 
 ../baselib/include/distributed2dfield.hpp
 mpi.h
@@ -34,8 +32,18 @@ coord2d.hpp
 cartesiandistribution2d.hpp
 ../baselib/include/cartesiandistribution2d.hpp
 
-../simpleui/include/commandlineconfig.hpp
-configuration.hpp
+../baselib/include/simulationobserver.hpp
+distributed2dfield.hpp
+../baselib/include/distributed2dfield.hpp
+
+../posttreat/include/dataavg.hpp
+datareduce.hpp
+../posttreat/include/datareduce.hpp
+
+../simpleui/include/screenprinter.hpp
+simulationobserver.hpp
+-
+datareduce.hpp
 -
 
 ../vendor/mdspan/include/experimental/__p0009_bits/accessor_basic.hpp
@@ -256,15 +264,17 @@ __p0009_bits/static_array.hpp
 __p0009_bits/subspan.hpp
 ../vendor/mdspan/include/experimental/__p0009_bits/subspan.hpp
 
-/data/simpleui/src/commandlineconfig.cpp
-cstdlib
+/data/simpleui/src/screenprinter.cpp
+chrono
 -
 iostream
 -
-string
+thread
 -
-commandlineconfig.hpp
-/data/simpleui/src/commandlineconfig.hpp
+screenprinter.hpp
+/data/simpleui/src/screenprinter.hpp
+dataavg.hpp
+-
 
 /usr/lib/x86_64-linux-gnu/openmpi/include/mpi.h
 stddef.h
