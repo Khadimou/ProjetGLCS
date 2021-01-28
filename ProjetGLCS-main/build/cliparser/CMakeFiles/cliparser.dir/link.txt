@@ -1,0 +1,2 @@
+/usr/bin/ar qc libcliparser.a CMakeFiles/cliparser.dir/src/cmdparse.cpp.o
+/usr/bin/ranlib libcliparser.a
